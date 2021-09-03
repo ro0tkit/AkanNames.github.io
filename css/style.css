@@ -1,6 +1,28 @@
-#container{
-    width: 1200px;
-    height: 600px;
-    margin: auto;
-    background: linear-gradient(90deg, rgba(0,36,28,1) 0%, rgba(9,121,78,1) 35%, rgba(0,255,106,1) 100%);
-}
+
+#container {
+   background-image: url(../images/ghana-flag.jpg);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .content{
+    width: 60%;
+    height: 400px;
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid black ;
+    border-radius: 10px;
+    background:whitesmoke;
+    color:black;
+ }
+ h1{
+  text-align: center;   
+  font-family: 'Abril Fatface', cursive;
+  font-size: 40px;
+  
+ }
