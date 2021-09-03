@@ -1,4 +1,6 @@
 #container{
-    background: rgb(0,36,28);
+    width: 1200px;
+    height: 600px;
+    margin: auto;
     background: linear-gradient(90deg, rgba(0,36,28,1) 0%, rgba(9,121,78,1) 35%, rgba(0,255,106,1) 100%);
 }
