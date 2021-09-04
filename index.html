@@ -11,26 +11,29 @@
     </head>
 
     <body>
+        <p>In many parts of Ghana, and many parts in Africa, a person’s name is determined by the day of the week on which he/she was born.
+
+        Enter your birthdate and gender below to display your day name in Ashanti Twi, a dialect of Akan and the most widely spoken language in Ghana:</p>
        <div id="container">
             <div class="content">
                 <form>
                     <h1>Fill in the form:</h1>
+                    <div>
+                    <label>Date of Birth: <input type="text" name="result1"></label>
+                    <label>Akan Name: <input type="text" name="result2" ></label>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Days<input type="text" name="day" size="2"></label>
+                        <label>Month<input type="text" name="month" sivze="2"></label>
+                        <label>Year<input type="text" name="year" size="4"></label>
+                    </div>
 
-                    <p>Days  : <input TYPE="text" NAME="day" SIZE="2"> </p>
-                    <p>Month: <input TYPE="text" NAME="month" SIZE="2"> </p>
-                    <p>Year : <input TYPE="text" NAME="year" SIZE="4"> </p>    
-                    <h6><u><b>GENDER</b></h6></u></h>
-                    <div class="button">
-
-                    <label><input type="radio" name="gender"  ONCLICK="compute(this.form)">Male</label>
-            
-                    </div> 
-
-                    <label><input type="radio" name="gender" ONCLICK="tomm(this.form)">Female</label>
-
-                    <p>Date of Birth: <input TYPE="text" NAME="result1" SIZE="18"> </p>
-                    <p>Akan Name: <input TYPE="text" NAME="result2" SIZE="18"> </p>
-                    
+                    <div class="radio">
+                    <h2>Gender</h2>
+                        <label><input type="radio" name="gender"  ONCLICK="compute(this.form)">Male</label>
+                        <label><input type="radio" name="gender" ONCLICK="tomm(this.form)">Female</label>
+                    </div>
 
 
                 </form>
