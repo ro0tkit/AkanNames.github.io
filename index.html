@@ -5,6 +5,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
 
         <title>Akan Names</title>
@@ -14,33 +15,42 @@
         <p>In many parts of Ghana, and many parts in Africa, a person’s name is determined by the day of the week on which he/she was born.
 
         Enter your birthdate and gender below to display your day name in Ashanti Twi, a dialect of Akan and the most widely spoken language in Ghana:</p>
+
        <div id="container">
-            <div class="content">
-                <form>
-                    <h1>Fill in the form:</h1>
-                    <div>
-                    <label>Date of Birth: <input type="text" name="result1"></label>
-                    <label>Akan Name: <input type="text" name="result2" ></label>
-                    </div>
-                    <br>
-                    <div>
-                        <label>Days<input type="text" name="day" size="2"></label>
-                        <label>Month<input type="text" name="month" sivze="2"></label>
-                        <label>Year<input type="text" name="year" size="4"></label>
-                    </div>
+          <div class="content">  
+            <form id="frmAkans">
 
-                    <div class="radio">
-                    <h2>Gender</h2>
-                        <label><input type="radio" name="gender"  ONCLICK="compute(this.form)">Male</label>
-                        <label><input type="radio" name="gender" ONCLICK="tomm(this.form)">Female</label>
-                    </div>
-
-
-                </form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Date of Birth</label>
+                <input type="date" name="dob" class="form-control" id="inputEmail4">
+              </div>
+             
             </div>
-
+        
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="radio">
+                    <label>Gender</label> <br>
+                    <label><input type="radio" name="gender">Male</label>
+                    <label><input type="radio" name="gender">Female</label>
+                </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
        </div>
 
-        <script src="app.js" async defer></script>
+        <script src="app.js"></script>
     </body>
 </html>
