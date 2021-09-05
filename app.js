@@ -13,6 +13,8 @@ const checkAkan = (e) => {
     const gender = fd.get("gender");
     const dob = fd.get("dob");
 
+    const d = new Date(dob).getDay()
+
     if (gender == "male"){
         console.log("Your Akan name is "+maleAkanNames)
     }else{
