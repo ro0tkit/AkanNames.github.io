@@ -35,7 +35,13 @@ p{
    display:inline-block;
    margin: 30px;
 }
+input[type="radio"]{
+   margin: 0 15px 0 15px;
+ }
+ 
 #message{
    color: rgb(255, 38, 38);
-   font-family: 'Abril Fatface', cursive;;
+   font-family: 'Abril Fatface', cursive;
+   font-size: 30px;
+   text-align: center;
 }

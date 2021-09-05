@@ -1,6 +1,3 @@
-/*
-*/
-
 
 const checkAkan = (e) => {
     e.preventDefault();
@@ -8,7 +5,7 @@ const checkAkan = (e) => {
     const maleAkanNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]
     const femaleAkanNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
 
-    const frm = document.querySelector("#frmAkans");
+    const frm = document.querySelector("#akanForm");
     const fd = new FormData(frm);
     const gender = fd.get("gender");
     const dob = fd.get("dob");
@@ -16,14 +13,14 @@ const checkAkan = (e) => {
     const d = new Date(dob).getDay();
 
     if(dob === ""){
-        alert("INVALID INPUT");
+        alert("INVALID INPUT!");
     }
 
 
     if (gender === "male"){
-        console.log("Your Akan name is "+maleAkanNames[d]);
+        document.querySelector("#message").innerHTML=("Your Akan name is "+maleAkanNames[d]);
     }else{
-        console.log("Your Akan name is "+femaleAkanNames[d]);
+        document.querySelector("#message").innerHTML=("Your Akan name is "+femaleAkanNames[d]);
     }
   
 }
@@ -32,5 +29,4 @@ const checkAkan = (e) => {
 
 
 
-
-document.querySelector("#frmAkans").addEventListener("submit", checkAkan);
+document.querySelector("#akanForm").addEventListener("submit", checkAkan);
