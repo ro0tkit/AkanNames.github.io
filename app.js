@@ -13,12 +13,17 @@ const checkAkan = (e) => {
     const gender = fd.get("gender");
     const dob = fd.get("dob");
 
-    const d = new Date(dob).getDay()
+    const d = new Date(dob).getDay();
 
-    if (gender == "male"){
-        console.log("Your Akan name is "+maleAkanNames)
+    if(dob === ""){
+        alert("INVALID INPUT");
+    }
+
+
+    if (gender === "male"){
+        console.log("Your Akan name is "+maleAkanNames[d]);
     }else{
-        console.log("Your Akan name is "+maleAkanNames)
+        console.log("Your Akan name is "+femaleAkanNames[d]);
     }
   
 }
